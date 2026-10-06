@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panna Lal Enterprises | X-Ray Medical Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="brand">
+                <img src="images/logo.jpg" alt="Logo" class="brand-logo">
+                <h1 class="logo">Panna Lal Enterprises</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-text">
+            <h2>Advanced X-Ray Medical Technologies</h2>
+            <p>Your trusted partner for 100mA & 30mA X-Ray machines and professional repair services.</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <h2 class="section-title">Our Services & Expertise</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>100 mA X-Ray Machines</h3>
+                    <p>High-quality, reliable 100 mA X-ray machines for comprehensive medical imaging and diagnostics. Built for durability and precise results.</p>
+                </div>
+                <div class="card">
+                    <h3>30 mA Portable X-Ray Machines</h3>
+                    <p>Compact and highly mobile 30 mA portable X-ray units, perfect for bedside imaging, clinics, and emergency medical settings.</p>
+                </div>
+                <div class="card">
+                    <h3>Expert Repairing Services</h3>
+                    <p>Professional maintenance and repair services for all your X-ray equipment. We ensure your machines operate safely and efficiently with minimal downtime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Gallery Section -->
+    <section id="products" class="products section bg-light">
+        <div class="container">
+            <h2 class="section-title">Featured Equipment</h2>
+            <div class="grid">
+                <div class="product-card">
+                    <img src="images/30ma_portable_real.jpg" alt="30 mA Portable X-Ray Machine">
+                    <h3>30 mA Portable Machine</h3>
+                    <p>Lightweight, easy to maneuver, and highly efficient portable unit.</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/100ma_real.jpg" alt="100 mA Mobile X-Ray Machine">
+                    <h3>100 mA Mobile Machine</h3>
+                    <p>Complete 100 mA mobile X-ray unit for versatile clinical and hospital applications.</p>
+                </div>
+                <div class="product-card">
+                    <img src="images/tubehead_real.jpg" alt="100 mA X-Ray Tubehead">
+                    <h3>100 mA Tubehead</h3>
+                    <p>Durable and high-performance tubehead for consistent imaging quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Service Request Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title">Contact & Service Request</h2>
+            <p class="contact-subtitle">Reach out for inquiries, sales, or request emergency repair services.</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info-vertical">
+                    <div class="contact-item">
+                        <h3>Owner</h3>
+                        <p>Vikas Kumar Azad</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Phone & WhatsApp</h3>
+                        <p><a href="tel:+919711623924">+91 97116 23924</a></p>
+                        <p style="margin-top: 8px; font-size: 1rem;"><a href="https://wa.me/919711623924" target="_blank" style="color: #25d366; font-weight: bold;">🟢 Chat on WhatsApp</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:pannalalenterprises@gmail.com">pannalalenterprises@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Request Service</h3>
+                    <!-- Using formsubmit.co to send email without backend -->
+                    <form action="https://formsubmit.co/pannalalenterprises@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="New Service Request - Panna Lal Enterprises">
+                        
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contact">Contact Number</label>
+                            <input type="tel" id="contact" name="contact" required placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select service type</option>
+                                <option value="100mA Machine Query">100 mA Machine Inquiry</option>
+                                <option value="30mA Machine Query">30 mA Portable Machine Inquiry</option>
+                                <option value="Repairing Service">Machine Repairing Service</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Panna Lal Enterprises. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919711623924" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+</body>
+</html>
